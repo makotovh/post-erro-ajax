@@ -5,14 +5,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Teste de Valida&ccedil;&atilde;o de Erro de Chamadas Ajax</title>
+<title>Tratando erros com Ajax e VRaptor</title>
 <script type="text/javascript" src="<c:url value="/js/jquery-1.5.min.js" />" charset="utf-8"></script>
 
 <script type="text/javascript">
 function testaCodigo() {
 	$.ajax({
 		url : "<c:url value='/testaCodigo' />",
-		type: "POST",
+		type: "post",
 		dataType: "json",
 		data: "codigo=" + $("#codigo").val(),
 		success: function (data) {
@@ -23,7 +23,7 @@ function testaCodigo() {
 		}
 	});
 
-}
+}	
 </script>
 </head>
 <body>
